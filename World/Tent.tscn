@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://basmoebk037de"]
+
+[ext_resource type="Texture2D" uid="uid://b51jvvnlv325l" path="res://World/Tent.png" id="1_0h4do"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ubshq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4peir"]
+size = Vector2(49, 18)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jyco6"]
+size = Vector2(48, 8.5)
+
+[node name="Tent" type="StaticBody2D"]
+physics_material_override = SubResource("PhysicsMaterial_ubshq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_0h4do")
+offset = Vector2(0, -23)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 8)
+shape = SubResource("RectangleShape2D_4peir")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(0, -48)
+shape = SubResource("RectangleShape2D_jyco6")

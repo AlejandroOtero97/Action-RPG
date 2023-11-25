@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Action Rpg 2"
+config/name="Action RPG"
 run/main_scene="res://world.tscn"
 config/features=PackedStringArray("4.1", "Mobile")
 run/max_fps=144
