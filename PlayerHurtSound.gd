@@ -1,6 +1,5 @@
 extends AudioStreamPlayer
 
 
-func _ready():
+func _on_finished():
 	self.connect("finished", queue_free)
-

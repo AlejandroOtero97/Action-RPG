@@ -890,7 +890,6 @@ texture = ExtResource("3_073yp")
 offset = Vector2(0, 1.5)
 
 [node name="Sprite" type="Sprite2D" parent="."]
-y_sort_enabled = true
 material = SubResource("ShaderMaterial_52hqe")
 position = Vector2(0, -9)
 texture = ExtResource("2_an85v")
@@ -928,6 +927,7 @@ collision_layer = 2
 collision_mask = 8
 
 [node name="CollisionShape2D" parent="HitboxPivot/SwordHitbox" index="0"]
+position = Vector2(0, -5.06799e-05)
 shape = SubResource("CapsuleShape2D_hx6uf")
 disabled = true
 
