@@ -1,0 +1,32 @@
+[gd_scene load_steps=9 format=3 uid="uid://p8bolvelxvkp"]
+
+[ext_resource type="AudioStream" uid="uid://hnc4d88fn7df" path="res://Music and Sounds/Hurt1.wav" id="1_u7t7g"]
+[ext_resource type="AudioStream" uid="uid://dq47w2y18rh4x" path="res://Music and Sounds/Hurt2t.wav" id="2_n0vo8"]
+[ext_resource type="Script" path="res://PlayerHurtSound.gd" id="2_q854r"]
+[ext_resource type="AudioStream" uid="uid://375p1g1m6kn" path="res://Music and Sounds/Hurt3.wav" id="3_y53aq"]
+[ext_resource type="AudioStream" uid="uid://bcy1vataeujo4" path="res://Music and Sounds/Hurt4.wav" id="4_dncd3"]
+[ext_resource type="AudioStream" uid="uid://bd483xnc5tspq" path="res://Music and Sounds/Hurt5.wav" id="5_nljc0"]
+[ext_resource type="AudioStream" uid="uid://dushrqnshrt55" path="res://Music and Sounds/Hurt6.wav" id="6_32vgy"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_x27ea"]
+streams_count = 6
+stream_0/stream = ExtResource("1_u7t7g")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("2_n0vo8")
+stream_1/weight = 1.0
+stream_2/stream = ExtResource("3_y53aq")
+stream_2/weight = 1.0
+stream_3/stream = ExtResource("4_dncd3")
+stream_3/weight = 1.0
+stream_4/stream = ExtResource("5_nljc0")
+stream_4/weight = 1.0
+stream_5/stream = ExtResource("6_32vgy")
+stream_5/weight = 1.0
+
+[node name="PlayerHurtSound" type="AudioStreamPlayer"]
+stream = SubResource("AudioStreamRandomizer_x27ea")
+volume_db = -10.0
+autoplay = true
+script = ExtResource("2_q854r")
+
+[connection signal="finished" from="." to="." method="_on_finished"]

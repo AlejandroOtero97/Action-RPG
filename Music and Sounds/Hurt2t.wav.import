@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dq47w2y18rh4x"
+path="res://.godot/imported/Hurt2t.wav-4d699e380fb8c0dbd1052aa4c0ae8bce.sample"
+
+[deps]
+
+source_file="res://Music and Sounds/Hurt2t.wav"
+dest_files=["res://.godot/imported/Hurt2t.wav-4d699e380fb8c0dbd1052aa4c0ae8bce.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

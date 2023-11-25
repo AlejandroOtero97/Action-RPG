@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dushrqnshrt55"
+path="res://.godot/imported/Hurt6.wav-3649e91215fd1499856f8c046018d02f.sample"
+
+[deps]
+
+source_file="res://Music and Sounds/Hurt6.wav"
+dest_files=["res://.godot/imported/Hurt6.wav-3649e91215fd1499856f8c046018d02f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
