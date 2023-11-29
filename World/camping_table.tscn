@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dbmiw08wcagp1"]
+
+[ext_resource type="Texture2D" uid="uid://ionvo1q81gh0" path="res://World/ME_Singles_Camping_16x16_Benched_Table_2.png" id="1_1n7c5"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ibwi3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qyqbu"]
+size = Vector2(31, 16)
+
+[node name="CampingTable" type="StaticBody2D"]
+physics_material_override = SubResource("PhysicsMaterial_ibwi3")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_1n7c5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -4)
+shape = SubResource("RectangleShape2D_qyqbu")
