@@ -1,8 +1,8 @@
 [gd_scene load_steps=64 format=3 uid="uid://y23dqpfx2jcy"]
 
 [ext_resource type="Script" path="res://Player/Player.gd" id="1_adcrk"]
+[ext_resource type="Texture2D" uid="uid://df65co1288qco" path="res://World/Sprites/Shadows/MediumShadow.png" id="2_8ssyf"]
 [ext_resource type="Texture2D" uid="uid://bjforqcu48nvg" path="res://Player/Player.png" id="2_an85v"]
-[ext_resource type="Texture2D" uid="uid://df65co1288qco" path="res://Shadows/MediumShadow.png" id="3_073yp"]
 [ext_resource type="Shader" path="res://WhiteColor.gdshader" id="3_sru78"]
 [ext_resource type="PackedScene" uid="uid://cp6by0wnpdpmr" path="res://Overlap/hit_box.tscn" id="3_v5sv8"]
 [ext_resource type="AudioStream" uid="uid://kswousn4ey0y" path="res://Music and Sounds/Swipe.wav" id="4_c5xli"]
@@ -886,7 +886,7 @@ script = ExtResource("1_adcrk")
 
 [node name="Shadow" type="Sprite2D" parent="."]
 y_sort_enabled = true
-texture = ExtResource("3_073yp")
+texture = ExtResource("2_8ssyf")
 offset = Vector2(0, 1.5)
 
 [node name="Sprite" type="Sprite2D" parent="."]

@@ -1,0 +1,83 @@
+[gd_scene load_steps=12 format=3 uid="uid://b02eagvrsi5ru"]
+
+[ext_resource type="Texture2D" uid="uid://xkvyred6sqy3" path="res://World/Sprites/Fishing_Boat_2_right_16x16.png" id="1_ks5g4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_glv43"]
+atlas = ExtResource("1_ks5g4")
+region = Rect2(0, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iy61q"]
+atlas = ExtResource("1_ks5g4")
+region = Rect2(96, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8gb8j"]
+atlas = ExtResource("1_ks5g4")
+region = Rect2(192, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_84hv6"]
+atlas = ExtResource("1_ks5g4")
+region = Rect2(288, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4iaxi"]
+atlas = ExtResource("1_ks5g4")
+region = Rect2(384, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mlxij"]
+atlas = ExtResource("1_ks5g4")
+region = Rect2(480, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mwmod"]
+atlas = ExtResource("1_ks5g4")
+region = Rect2(576, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6pm5t"]
+atlas = ExtResource("1_ks5g4")
+region = Rect2(672, 0, 96, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_aj5go"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_glv43")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iy61q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8gb8j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_84hv6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4iaxi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mlxij")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mwmod")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6pm5t")
+}],
+"loop": true,
+"name": &"Boat",
+"speed": 15.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_m7g3p"]
+radius = 16.0
+height = 82.0
+
+[node name="Boat" type="StaticBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_aj5go")
+animation = &"Boat"
+autoplay = "Boat"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4, 7)
+rotation = -1.5708
+shape = SubResource("CapsuleShape2D_m7g3p")
